@@ -301,8 +301,8 @@ Tutorial</a>.</p>
 <p>If you already have Docker installed on your computer, start at Step 2.</p>
 <div class="section" id="download-install-docker">
 <h2>1. Download &amp; Install Docker<a class="headerlink" href="#download-install-docker" title="Permalink to this headline">¶</a></h2>
-<p><strong>Docker is available for free from</strong> <a class="reference external" href="https://www.docker.com/products/docker-desktop">this website</a></p>
-<p>Follow the instructions to install the Docker Desktop App. The [Getting Started guide on Docker] (<a class="reference external" href="https://www.docker.com/get-started">https://www.docker.com/get-started</a>) has detailed instructions for setting up Docker on Mac, Windows, or Linux.</p>
+<p><strong>Docker is available for free from <a class="reference external" href="https://www.docker.com/products/docker-desktop">this website</a>.</strong></p>
+<p>Follow the instructions to install the Docker Desktop App. The <a class="reference external" href="https://www.docker.com/get-started">Getting Started guide on Docker</a> has detailed instructions for setting up Docker on Mac, Windows, or Linux.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>To access the container, you can interface with Docker using the Desktop App or using a command line.</p>
@@ -328,7 +328,7 @@ Tutorial</a>.</p>
 <p>This only needs to be done one time – you can keep using this
 container any time you run NEON simulations. Please note that this step
 can take a little time as it will download ~5GB of data (time will vary
-based on internet speed).*</p>
+based on internet speed).</p>
 <div class="section" id="getting-cesm-lab-using-a-linux-command-line">
 <h3>2.1. Getting CESM-Lab: using a Linux command-line<a class="headerlink" href="#getting-cesm-lab-using-a-linux-command-line" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -344,7 +344,7 @@ based on internet speed).*</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Docker needs to be running on your computer before using the ‘pull’ command above.
+<p>Docker needs to be running on your computer before using the <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">pull</span></code> command above.
 You can run Docker by either opening the app or typing “docker login” in the command line.</p>
 </div>
 </div>
@@ -367,7 +367,9 @@ If you change the name or location you will need to update the container locatio
 </div>
 <div class="section" id="run-connect-to-cesm-lab-container">
 <h2>4. Run &amp; connect to CESM-Lab container<a class="headerlink" href="#run-connect-to-cesm-lab-container" title="Permalink to this headline">¶</a></h2>
-<p>To access CESM-Lab, you need to first run or launch the container and then connect to it. The next steps launch the container (4a) and then ‘forwards’ a web browser to it (4b), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended). If you prefer to use the GUI interface within the Docker App, see the alternate instructions below (Alt 4a).</p>
+<p>To access CESM-Lab, you need to first run or launch the container and then connect to it.</p>
+<p>The next steps launch the container (4.1) and then ‘forwards’ a web browser to it (4.2), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended).</p>
+<p>If you prefer to use the GUI interface within the Docker App, see the alternate instructions on <a class="reference external" href="https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view">this tutorial</a>.</p>
 <p>There are two options for running the container.</p>
 <div class="section" id="running-cesm-lab-using-a-linux-command-line">
 <h3>4.1. Running CESM-Lab using a Linux command-line<a class="headerlink" href="#running-cesm-lab-using-a-linux-command-line" title="Permalink to this headline">¶</a></h3>
@@ -399,9 +401,9 @@ If you change the name or location you will need to update the container locatio
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>*This connects to an interface. Note the ‘9999’ at the end of this
-number is the same as the beginning of the port in step 4 above. If you
-launch more than one container at a time, you will need to change the
+<p>This connects to an interface. Note the ‘9999’ at the end of this
+number is the same as the beginning of the port in step 4 above.</p>
+<p>If you launch more than one container at a time, you will need to change the
 port number.</p>
 </div>
 </div>
@@ -410,8 +412,7 @@ port number.</p>
 <h2>5. Accessing the NEON Tower Simulation Tutorial<a class="headerlink" href="#accessing-the-neon-tower-simulation-tutorial" title="Permalink to this headline">¶</a></h2>
 <p>Your browser window will open a Jupyter Notebook environment.</p>
 <ul class="simple">
-<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">tutorials</span></code> folder on the left, then</p></li>
-<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">notebooks</span></code> folder.</p></li>
+<li><p>Double-click on the <code class="docutils literal notranslate"><span class="pre">tutorials</span></code> folder on the left, then</p></li>
 <li><p>Open the <code class="docutils literal notranslate"><span class="pre">NEON_Tower_Simulation_Tutorial</span></code></p></li>
 </ul>
 <p><img alt="Jupyter-Lab screenshot" src="_images/jupyter-lab_screenshot.png" /></p>
@@ -420,10 +421,10 @@ Once you complete this tutorial, you can use the <code class="docutils literal n
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul class="simple">
-<li><p><em>If you want to access the container again in the future and do not
+<li><p>If you want to access the container again in the future and do not
 end your session, you can open a web browser and point to the
-container (Step 4.b).</em></p></li>
-<li><p>*If you end your session (Step 6) or restart your computer, you can
+container (Step 4.2).</p></li>
+<li><p>If you end your session (Step 6) or restart your computer, you can
 restart the container from Step 4.</p></li>
 </ul>
 </div>
@@ -447,7 +448,12 @@ following into terminal:</p>
 <p>If the <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">run</span></code> command was not run in the background, you might find
 that you cannot type anything into the open terminal window. Either open
 a new terminal window to identify and kill sessions, or you can use
-<code class="docutils literal notranslate"><span class="pre">ctrl</span> <span class="pre">+</span> <span class="pre">c</span></code> to kill all active sessions.</p>
+<code class="docutils literal notranslate"><span class="pre">ctrl+c</span></code> to kill all active sessions.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Need help with the CESM-Lab container?</p>
+<p>Post your questions on the Containers forum in the CESM Bulletin Board (<a class="reference external" href="https://bb.cgd.ucar.edu/cesm/forums/containers-cloud-platforms.162/">https://bb.cgd.ucar.edu/cesm/forums/containers-cloud-platforms.162/</a>). Note that this resource will require you to register and log in so that you can be notified of responses to your inquiries.</p>
+</div>
 </div>
 </div>
 
