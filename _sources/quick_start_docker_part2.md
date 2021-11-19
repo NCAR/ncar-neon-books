@@ -95,7 +95,7 @@ To access CESM-Lab, you need to first run or launch the container and then conne
 
 The next steps launch the container (4.1) and then ‘forwards’ a web browser to it (4.2), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended).
 
-If you prefer to use the GUI interface within the Docker App, see the alternate instructions on [this tutorial](https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view).
+If you prefer to use the GUI interface within the Docker App, see the alternate instructions (Step Alt. 4a) towards the end of [this tutorial](https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view).
 
 There are two options for running the container.
 
@@ -124,7 +124,7 @@ Note that you can change the first part of the port number (9999) to a different
 :::
 
 
-### 4.b. Connect to CESM-Lab using a web browser
+### 4.2. Connect to CESM-Lab using a web browser
 
 Open a new web browser window.
 
