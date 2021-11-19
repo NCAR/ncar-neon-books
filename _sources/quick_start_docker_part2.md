@@ -84,7 +84,7 @@ If you change the name or location you will need to update the container locatio
 
 In your terminal or PowerShell window, type:
 
-    mkdir \$HOME/Desktop/Simulations
+    mkdir $HOME/Desktop/Simulations
 
 Confirm that this step worked properly. Do you see the `Simulations` folder on your desktop?
 
@@ -104,7 +104,7 @@ There are two options for running the container.
 In your terminal or PowerShell window, type:
 
 ```
-  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/ctsm-lab-2.3-preview
+  docker run -it --rm -p 9999:8888 -v $HOME/Desktop/Simulations:/home/user escomp/ctsm-lab-2.3-preview
 
 ```
 Description of some flags or options that are available for running the `docker run`:
@@ -144,7 +144,7 @@ port number.
 Your browser window will open a Jupyter Notebook environment.
 
 -   Double-click on the `tutorials` folder on the left, then
--   Open the `NEON_Tower_Simulation_Tutorial`
+-   Open the `NEON_Simulation_Tutorial`
 
 ![Jupyter-Lab screenshot](images/jupyter-lab_screenshot.png)
 

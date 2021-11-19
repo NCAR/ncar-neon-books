@@ -15,6 +15,10 @@ Please note that this tool is currently in development and we are soliciting fee
 This tutorial will guide you through setting up a container on your local system and it will guide you through running a simulation and provides example of basic visualization and analysis of the simulation results.
 
 
+:::{note}
+Interactive plots will be available soon on [NEON's website](https://www.neonscience.org/). 
+:::
+
 
 ## Resources
 
