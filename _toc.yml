@@ -1,0 +1,19 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Lesson 1
+  chapters:
+    - file: quick_start_docker
+    - file: quick_start_docker_part2
+
+- caption: Lesson 2
+  chapters:
+    - file: notebooks/NEON_Simulation_Tutorial
+
+- caption: Lesson 3
+  chapters:
+    - file: notebooks/NEON_Visualization_Tutorial
+#- file: NEON_Visualization_Tutorial_Advanced-Copy1
