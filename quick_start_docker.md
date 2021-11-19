@@ -42,6 +42,9 @@ commands, which you can run on Macs using the Terminal application
 (in the Utilities folder) or a similar application for PCs, like
 Windows PowerShell.
 
+:::{tip}
+Windows users can use PowerShell. PowerShell is a lot like the Command Prompt, but has some Unix-like behaviors.  Command Prompt is still usable, but would require some changes to the following instructions in terms of making/specifying directories!
+:::
 
 :::{seealso}
 Knowledge of Linux is not required for this tutorial. If you are unfamiliar with Linux and would like to know more, there are several tutorials online.

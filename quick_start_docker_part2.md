@@ -18,9 +18,9 @@ Steps 1-3 only need to be completed once. You can continue to use the container 
 If you already have Docker installed on your computer, start at Step 2.
 
 ## 1. Download & Install Docker
-**Docker is available for free from** [this website](https://www.docker.com/products/docker-desktop)
+**Docker is available for free from [this website](https://www.docker.com/products/docker-desktop).**
 
-Follow the instructions to install the Docker Desktop App. The [Getting Started guide on Docker] (https://www.docker.com/get-started) has detailed instructions for setting up Docker on Mac, Windows, or Linux.
+Follow the instructions to install the Docker Desktop App. The [Getting Started guide on Docker](https://www.docker.com/get-started) has detailed instructions for setting up Docker on Mac, Windows, or Linux.
 
 :::{tip}
 To access the container, you can interface with Docker using the Desktop App or using a command line.
@@ -52,7 +52,7 @@ If you are unfamiliar with Docker or are having trouble, you may find the follow
 This only needs to be done one time -- you can keep using this
 container any time you run NEON simulations. Please note that this step
 can take a little time as it will download \~5GB of data (time will vary
-based on internet speed).*
+based on internet speed).
 
 ### 2.1. Getting CESM-Lab: using a Linux command-line
 
@@ -66,7 +66,7 @@ In your Terminal or PowerShell window, type:
     docker pull escomp/ctsm-lab-2.3-preview
 
 :::{note}
-Docker needs to be running on your computer before using the ‘pull’ command above. 
+Docker needs to be running on your computer before using the `docker pull` command above. 
 You can run Docker by either opening the app or typing “docker login” in the command line.
 :::
 
@@ -91,7 +91,11 @@ Confirm that this step worked properly. Do you see the `Simulations` folder on y
 
 ## 4. Run & connect to CESM-Lab container
 
-To access CESM-Lab, you need to first run or launch the container and then connect to it. The next steps launch the container (4a) and then ‘forwards’ a web browser to it (4b), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended). If you prefer to use the GUI interface within the Docker App, see the alternate instructions below (Alt 4a).
+To access CESM-Lab, you need to first run or launch the container and then connect to it.
+
+The next steps launch the container (4.1) and then ‘forwards’ a web browser to it (4.2), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended).
+
+If you prefer to use the GUI interface within the Docker App, see the alternate instructions on [this tutorial](https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view).
 
 There are two options for running the container.
 
@@ -129,19 +133,18 @@ In the search bar type:
     localhost:9999
 
 :::{note}
-*This connects to an interface. Note the ‘9999’ at the end of this
-number is the same as the beginning of the port in step 4 above. If you
-launch more than one container at a time, you will need to change the
+This connects to an interface. Note the ‘9999’ at the end of this
+number is the same as the beginning of the port in step 4 above. 
+
+If you launch more than one container at a time, you will need to change the
 port number.
 :::
 
 ## 5. Accessing the NEON Tower Simulation Tutorial
 Your browser window will open a Jupyter Notebook environment.
 
--   Click on the `tutorials` folder on the left, then
--   Click on the `notebooks` folder.
+-   Double-click on the `tutorials` folder on the left, then
 -   Open the `NEON_Tower_Simulation_Tutorial`
-
 
 ![Jupyter-Lab screenshot](images/jupyter-lab_screenshot.png)
 
@@ -151,10 +154,10 @@ Once you complete this tutorial, you can use the `NEON_Visualization_Tutorial` t
 
 :::{tip}
 
--   *If you want to access the container again in the future and do not
+-   If you want to access the container again in the future and do not
     end your session, you can open a web browser and point to the
-    container (Step 4.b).*
--   *If you end your session (Step 6) or restart your computer, you can
+    container (Step 4.2).
+-   If you end your session (Step 6) or restart your computer, you can
     restart the container from Step 4.
 :::
 
@@ -184,4 +187,11 @@ following into terminal:
 If the `docker run` command was not run in the background, you might find
 that you cannot type anything into the open terminal window. Either open
 a new terminal window to identify and kill sessions, or you can use
-`ctrl + c` to kill all active sessions.
+`ctrl+c` to kill all active sessions.
+
+
+:::{seealso}
+Need help with the CESM-Lab container? 
+
+Post your questions on the Containers forum in the CESM Bulletin Board (https://bb.cgd.ucar.edu/cesm/forums/containers-cloud-platforms.162/). Note that this resource will require you to register and log in so that you can be notified of responses to your inquiries. 
+:::
