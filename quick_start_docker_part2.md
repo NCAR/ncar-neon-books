@@ -63,7 +63,7 @@ based on internet speed).
 
 In your Terminal or PowerShell window, type:
 
-    docker pull escomp/ctsm-lab-2.3-preview
+    docker pull escomp/cesm-lab-neon
 
 :::{note}
 Docker needs to be running on your computer before using the `docker pull` command above. 
@@ -104,7 +104,7 @@ There are two options for running the container.
 In your terminal or PowerShell window, type:
 
 ```
-  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/ctsm-lab-2.3-preview
+  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/cesm-lab-neon
 
 ```
 Description of some flags or options that are available for running the `docker run`:
