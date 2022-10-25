@@ -22,7 +22,7 @@ This tutorial will guide you through setting up a container on your local system
 
 [CTSM User's Guide](https://escomp.github.io/ctsm-docs/versions/master/html/users_guide/index.html)
 
-[Quickstart Guide for Various Model Configuraions](https://escomp.github.io/CESM/release-cesm2/quickstart.html#create-a-case)
+[Quickstart Guide for Various Model Configurations](https://escomp.github.io/CESM/release-cesm2/quickstart.html#create-a-case)
 
 [Running single-point cases other than NEON](https://escomp.github.io/ctsm-docs/versions/master/html/users_guide/running-single-points/single-point-and-regional-grid-configurations.html)
 
