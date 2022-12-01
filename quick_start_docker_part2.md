@@ -112,7 +112,7 @@ Description of some flags or options that are available for running the `docker 
 *  `-it --rm` = 'Ease-of-use’ options: interactive & clean-up
 *  `-p` = Port number
 *  `-v` = Directory to mount into the container (first half), and the container’s mount location
-*  `"escomp/ctsm-..."` = Container Image Name
+*  `"escomp/cesm-..."` = Container Image Name
 
 Your terminal screen will show the following:  
 
