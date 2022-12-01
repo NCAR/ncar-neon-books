@@ -73,7 +73,7 @@ You can run Docker by either opening the app or typing “docker login” in the
 ## 3. Set up a directory for your simulations
 
 This step is used to create a directory that will map into the container. 
-The directory will store all the files required to run a simulation so that it does is saved when you exit the container. 
+The directory will store all the files required to run a simulation so they are saved when you exit the container. 
 
 ### 3.1.  Create a location for the container
 
@@ -131,6 +131,10 @@ Open a new web browser window.
 In the search bar type:
 
     localhost:9999
+
+:::{note}
+Note that it may take a few seconds to load. If you are having trouble loading the page, try refreshing.
+:::
 
 :::{note}
 This connects to an interface. Note the ‘9999’ at the end of this
