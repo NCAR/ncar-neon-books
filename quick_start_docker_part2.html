@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started with the CESM Lab container &#8212; CESM-Lab Neon Simulations Tutorials</title>
+    <title>Getting started with the CESM Lab container &#8212; NEON Workshop Tutorial Book</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -74,7 +74,7 @@
       <img src="_static/ncar_logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">CESM-Lab Neon Simulations Tutorials</h1>
+      <h1 class="site-logo" id="site-title">NEON Workshop Tutorial Book</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -186,7 +186,7 @@
             href="https://github.com/NCAR/NEON-visualization/issues/new?title=Issue%20on%20page%20%2Fquick_start_docker_part2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/NCAR/NEON-visualization/edit/main/docs/quick_start_docker_part2.md"><button
+        <a class="edit-button" href="https://github.com/NCAR/NEON-visualization/edit/master/docs/quick_start_docker_part2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -256,8 +256,8 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#connect-to-cesm-lab-using-a-web-browser">
-     4.2. Connect to CESM-Lab using a web browser
+    <a class="reference internal nav-link" href="#b-connect-to-cesm-lab-using-a-web-browser">
+     4.b. Connect to CESM-Lab using a web browser
     </a>
    </li>
   </ul>
@@ -339,7 +339,7 @@ based on internet speed).</p>
 <div class="section" id="download-the-ctsm-docker-container">
 <h3>2.2. Download the CTSM Docker Container<a class="headerlink" href="#download-the-ctsm-docker-container" title="Permalink to this headline">¶</a></h3>
 <p>In your Terminal or PowerShell window, type:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>docker pull escomp/ctsm-lab-2.3-preview
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>docker pull escomp/cesm-lab-neon
 </pre></div>
 </div>
 <div class="admonition note">
@@ -352,14 +352,14 @@ You can run Docker by either opening the app or typing “docker login” in the
 <div class="section" id="set-up-a-directory-for-your-simulations">
 <h2>3. Set up a directory for your simulations<a class="headerlink" href="#set-up-a-directory-for-your-simulations" title="Permalink to this headline">¶</a></h2>
 <p>This step is used to create a directory that will map into the container.
-The directory will store all the files required to run a simulation so that it does is saved when you exit the container.</p>
+The directory will store all the files required to run a simulation so they are saved when you exit the container.</p>
 <div class="section" id="create-a-location-for-the-container">
 <h3>3.1.  Create a location for the container<a class="headerlink" href="#create-a-location-for-the-container" title="Permalink to this headline">¶</a></h3>
 <p>These instructions create a new folder <code class="docutils literal notranslate"><span class="pre">Simulations</span></code> on your desktop.</p>
 <p>You may customize the name and location of the folder.
 If you change the name or location you will need to update the container location in the next step.</p>
 <p>In your terminal or PowerShell window, type:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir $HOME/Desktop/Simulations
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mkdir \$HOME/Desktop/Simulations
 </pre></div>
 </div>
 <p>Confirm that this step worked properly. Do you see the <code class="docutils literal notranslate"><span class="pre">Simulations</span></code> folder on your desktop?</p>
@@ -369,12 +369,12 @@ If you change the name or location you will need to update the container locatio
 <h2>4. Run &amp; connect to CESM-Lab container<a class="headerlink" href="#run-connect-to-cesm-lab-container" title="Permalink to this headline">¶</a></h2>
 <p>To access CESM-Lab, you need to first run or launch the container and then connect to it.</p>
 <p>The next steps launch the container (4.1) and then ‘forwards’ a web browser to it (4.2), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended).</p>
-<p>If you prefer to use the GUI interface within the Docker App, see the alternate instructions (Step Alt. 4a) towards the end of <a class="reference external" href="https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view">this tutorial</a>.</p>
+<p>If you prefer to use the GUI interface within the Docker App, see the alternate instructions on <a class="reference external" href="https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view">this tutorial</a>.</p>
 <p>There are two options for running the container.</p>
 <div class="section" id="running-cesm-lab-using-a-linux-command-line">
 <h3>4.1. Running CESM-Lab using a Linux command-line<a class="headerlink" href="#running-cesm-lab-using-a-linux-command-line" title="Permalink to this headline">¶</a></h3>
 <p>In your terminal or PowerShell window, type:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  docker run -it --rm -p 9999:8888 -v $HOME/Desktop/Simulations:/home/user escomp/ctsm-lab-2.3-preview
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/cesm-lab-neon
 
 </pre></div>
 </div>
@@ -383,7 +383,7 @@ If you change the name or location you will need to update the container locatio
 <li><p><code class="docutils literal notranslate"><span class="pre">-it</span> <span class="pre">--rm</span></code> = ‘Ease-of-use’ options: interactive &amp; clean-up</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-p</span></code> = Port number</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-v</span></code> = Directory to mount into the container (first half), and the container’s mount location</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">&quot;escomp/ctsm-...&quot;</span></code> = Container Image Name</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;escomp/cesm-...&quot;</span></code> = Container Image Name</p></li>
 </ul>
 <p>Your terminal screen will show the following:</p>
 <p><img alt="CESM-Lab Terminal" src="_images/docker_terminal_output_screenshot.png" /></p>
@@ -392,12 +392,16 @@ If you change the name or location you will need to update the container locatio
 <p>Note that you can change the first part of the port number (9999) to a different number to run multiple instances of the container, but you will need to change the port number in the next step.</p>
 </div>
 </div>
-<div class="section" id="connect-to-cesm-lab-using-a-web-browser">
-<h3>4.2. Connect to CESM-Lab using a web browser<a class="headerlink" href="#connect-to-cesm-lab-using-a-web-browser" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="b-connect-to-cesm-lab-using-a-web-browser">
+<h3>4.b. Connect to CESM-Lab using a web browser<a class="headerlink" href="#b-connect-to-cesm-lab-using-a-web-browser" title="Permalink to this headline">¶</a></h3>
 <p>Open a new web browser window.</p>
 <p>In the search bar type:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>localhost:9999
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that it may take a few seconds to load. If you are having trouble loading the page, try refreshing.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -413,7 +417,7 @@ port number.</p>
 <p>Your browser window will open a Jupyter Notebook environment.</p>
 <ul class="simple">
 <li><p>Double-click on the <code class="docutils literal notranslate"><span class="pre">tutorials</span></code> folder on the left, then</p></li>
-<li><p>Open the <code class="docutils literal notranslate"><span class="pre">NEON_Simulation_Tutorial</span></code></p></li>
+<li><p>Open the <code class="docutils literal notranslate"><span class="pre">NEON_Tower_Simulation_Tutorial</span></code></p></li>
 </ul>
 <p><img alt="Jupyter-Lab screenshot" src="_images/jupyter-lab_screenshot.png" /></p>
 <p>Follow the tutorial instructions to run a NEON tower site simulation.
@@ -513,7 +517,7 @@ a new terminal window to identify and kill sessions, or you can use
     <div class="container">
       <p>
         
-          By Negin Sobhani, Danica Lombardozzi, Will Wieder, David Durden, David Lawrence, Gordon Bonan<br/>
+          By Negin Sobhani, Danica Lombardozzi, Will Wieder, Gordon Bonan, Dave Lawrence<br/>
         
             &copy; Copyright 2021.<br/>
       </p>

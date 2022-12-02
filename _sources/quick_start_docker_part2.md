@@ -63,7 +63,7 @@ based on internet speed).
 
 In your Terminal or PowerShell window, type:
 
-    docker pull escomp/ctsm-lab-2.3-preview
+    docker pull escomp/cesm-lab-neon
 
 :::{note}
 Docker needs to be running on your computer before using the `docker pull` command above. 
@@ -73,7 +73,7 @@ You can run Docker by either opening the app or typing “docker login” in the
 ## 3. Set up a directory for your simulations
 
 This step is used to create a directory that will map into the container. 
-The directory will store all the files required to run a simulation so that it does is saved when you exit the container. 
+The directory will store all the files required to run a simulation so they are saved when you exit the container. 
 
 ### 3.1.  Create a location for the container
 
@@ -84,7 +84,7 @@ If you change the name or location you will need to update the container locatio
 
 In your terminal or PowerShell window, type:
 
-    mkdir $HOME/Desktop/Simulations
+    mkdir \$HOME/Desktop/Simulations
 
 Confirm that this step worked properly. Do you see the `Simulations` folder on your desktop?
 
@@ -95,7 +95,7 @@ To access CESM-Lab, you need to first run or launch the container and then conne
 
 The next steps launch the container (4.1) and then ‘forwards’ a web browser to it (4.2), with descriptions included below the commands to help understand what it is doing. Note that this step uses the command line to run the container (recommended).
 
-If you prefer to use the GUI interface within the Docker App, see the alternate instructions (Step Alt. 4a) towards the end of [this tutorial](https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view).
+If you prefer to use the GUI interface within the Docker App, see the alternate instructions on [this tutorial](https://drive.google.com/file/d/1Zs_SrlpGVlS3KHvFDUVyCGPXOfKgG4_c/view).
 
 There are two options for running the container.
 
@@ -104,7 +104,7 @@ There are two options for running the container.
 In your terminal or PowerShell window, type:
 
 ```
-  docker run -it --rm -p 9999:8888 -v $HOME/Desktop/Simulations:/home/user escomp/ctsm-lab-2.3-preview
+  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/cesm-lab-neon
 
 ```
 Description of some flags or options that are available for running the `docker run`:
@@ -112,7 +112,7 @@ Description of some flags or options that are available for running the `docker 
 *  `-it --rm` = 'Ease-of-use’ options: interactive & clean-up
 *  `-p` = Port number
 *  `-v` = Directory to mount into the container (first half), and the container’s mount location
-*  `"escomp/ctsm-..."` = Container Image Name
+*  `"escomp/cesm-..."` = Container Image Name
 
 Your terminal screen will show the following:  
 
@@ -124,13 +124,17 @@ Note that you can change the first part of the port number (9999) to a different
 :::
 
 
-### 4.2. Connect to CESM-Lab using a web browser
+### 4.b. Connect to CESM-Lab using a web browser
 
 Open a new web browser window.
 
 In the search bar type:
 
     localhost:9999
+
+:::{note}
+Note that it may take a few seconds to load. If you are having trouble loading the page, try refreshing.
+:::
 
 :::{note}
 This connects to an interface. Note the ‘9999’ at the end of this
@@ -144,7 +148,7 @@ port number.
 Your browser window will open a Jupyter Notebook environment.
 
 -   Double-click on the `tutorials` folder on the left, then
--   Open the `NEON_Simulation_Tutorial`
+-   Open the `NEON_Tower_Simulation_Tutorial`
 
 ![Jupyter-Lab screenshot](images/jupyter-lab_screenshot.png)
 

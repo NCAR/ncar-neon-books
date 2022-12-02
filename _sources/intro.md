@@ -15,10 +15,6 @@ Please note that this tool is currently in development and we are soliciting fee
 This tutorial will guide you through setting up a container on your local system and it will guide you through running a simulation and provides example of basic visualization and analysis of the simulation results.
 
 
-:::{note}
-Interactive plots will be available soon on [NEON's website](https://www.neonscience.org/). 
-:::
-
 
 ## Resources
 
@@ -26,7 +22,7 @@ Interactive plots will be available soon on [NEON's website](https://www.neonsci
 
 [CTSM User's Guide](https://escomp.github.io/ctsm-docs/versions/master/html/users_guide/index.html)
 
-[Quickstart Guide for Various Model Configuraions](https://escomp.github.io/CESM/release-cesm2/quickstart.html#create-a-case)
+[Quickstart Guide for Various Model Configurations](https://escomp.github.io/CESM/release-cesm2/quickstart.html#create-a-case)
 
 [Running single-point cases other than NEON](https://escomp.github.io/ctsm-docs/versions/master/html/users_guide/running-single-points/single-point-and-regional-grid-configurations.html)
 
