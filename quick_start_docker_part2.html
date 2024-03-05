@@ -463,7 +463,7 @@ tutorial</a>.</p>
 <div id="running-cesm-lab-using-a-linux-command-line" class="section level3">
 <h3>4.1. Running CESM-Lab using a Linux command-line</h3>
 <p>In your terminal or PowerShell window, type:</p>
-<pre><code>  docker run -it --rm -p 9999:8888 -v \$HOME/Desktop/Simulations:/home/user escomp/cesm-lab-neon
+<pre><code>  docker run -it --rm -p 9999:8888 -v ${HOME}:/home/user escomp/cesm-lab-neon
 </code></pre>
 <p>Description of some flags or options that are available for running
 the <code>docker run</code>:</p>
@@ -474,6 +474,7 @@ clean-up</li>
 <li><code>-v</code> = Directory to mount into the container (first
 half), and the container’s mount location</li>
 <li><code>&quot;escomp/cesm-...&quot;</code> = Container Image Name</li>
+<li><code>--platform linux/amd64</code> = Use this to run an x86-64 image on an Arm chip</li>
 </ul>
 <p>Your terminal screen will show the following:</p>
 <div class="figure">
